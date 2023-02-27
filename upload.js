@@ -31,3 +31,4 @@ async function uploadFile() {
     });
 
     alert('File uploaded successfully!');
+}    
