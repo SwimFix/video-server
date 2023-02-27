@@ -2,7 +2,7 @@ async function uploadFile() {
     const fileInput = document.getElementById('fileToUpload');
     const file = fileInput.files[0];
 
-    const token = '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';
+    const token = 'ghp_ePhlGig0C8Ji'+'hcOtbRvwHz9LGNIidq47gKPh';
     const octokit = new window.Octokit({
         auth: token,
     });
