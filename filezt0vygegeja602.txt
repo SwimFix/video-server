@@ -1,0 +1,145 @@
+\version "2.20.0"
+
+
+mandolin_III = \relative c' {
+  \key d \minor
+  \time 3/4
+  \tempo 4=80
+
+  
+
+  
+  d4.\p d8\<( d8 d8\!) |
+  d2\> r4\! |
+  d'4.\> a8( f8 d8\!) |
+  <d g,>4( <d d>4)  f4\<  s4*0\! |
+  e2\> s1*0\!
+  <<
+  { a4 }  \\  { f8.\<( d16\!) }
+  >> |
+  
+  <bes' g>2\>
+  <d, gis,>4\fz |
+  
+  <d a>4.->
+  
+  <f a,>8\pp(
+  <e a,>8
+  <g a,>8)
+  
+  |
+  
+  <<
+    {g4( f4)} \\
+    bes,2
+  >> 
+  <<
+    {d8( e16 f16)} \\
+    bes,4
+  >> |
+
+  <f' a,>2 \>
+  <e a,>4 \! |
+
+  \break
+  
+  d16\p( cis) d d  d\< cis d f\! gis\> a e f\! |
+  
+  d16( cis) d d d16( cis) d d d16( cis) d( d) |
+  
+  d16( cis) d d d16( cis) d f gis a f e |
+  
+  d16( cis) d d d16( cis) d d d16( cis) d( d) |
+  
+  \break
+  
+  d16( cis) d d  a' f d cis c b d c |
+  b ais b b bes a bes bes a gis a a |
+  gis( fisis) gis gis gis( fisis) gis gis  gis\pp( fisis) gis gis 
+  
+  \break
+  
+  a( gis) a d f( a, a' a, g' a, e' a,) |
+  cis( bis) cis cis d cis d d c b d c  |
+  b ais c c b ais c b bes a bis bis 
+  
+  \break
+  
+  a( gis a d) a( g) a a a( g) a a | 
+  
+  % B
+  gis( fisis) gis gis gis( fisis) gis gis gis( fisis) gis gis 
+  <gis d>8 r8 r8  gis( gis gis) |
+  \tuplet 6/4 { a16( gis a b a gis) }
+  \tuplet 6/4 { a16( gis a b a gis) } 
+  a8.(\> a16\!)  |
+  
+  \break
+  
+  \tuplet 6/4 { a16( gis a b a gis) }
+  \tuplet 6/4 { a16( gis a b a gis) } 
+  a8.(\> a16\!)  |
+  
+  \tuplet 6/4 { a16( gis a b a gis }
+  \tuplet 6/4 { a16 e' d cis b bes) }
+  \tuplet 6/4 { a16( a a a a a) } |
+  
+  \break
+  
+  \tuplet 6/4 { a16( gis a b a gis) } 
+  \tuplet 6/4 { a16(\< a' g f\> e d\!) } 
+  \tuplet 6/4 { a16( a a a a a) } |
+  
+  a4 r4 
+  \tuplet 6/4 { a16( gis a b a gis) } |
+  
+  a4 r4
+  \tuplet 6/4 { a16(\< gis a c\> c a\!) } | 
+  
+  a2.\fermata \section 
+  
+  \break
+
+
+ \time 4/4
+ \tempo 4=80
+ 
+  
+  s2. r4 | 
+  
+  r2  r4\pp g8. g16 |
+  
+  \tuplet 3/2 4 { a'8( bes a g a g f d f e f g) } | 
+  \tuplet 3/2 4 { f( g f e f g f g f a, b cis ) } | 
+  \tuplet 3/2 4 { f( g f e f g f g f) a,( b cis ) } | 
+  \tuplet 3/2 4 { d( e f) d( e f)  e( g f) e( f e) } | 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+
+
+  
+}
+
+\score {
+  \new Staff {
+    \set Staff.instrumentName = #"Mandolin 3"
+    \set Staff.shortInstrumentName = #"Mnd. 3"
+    \mandolin_III
+  }
+  \layout { }
+  \midi { }
+}
