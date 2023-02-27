@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload Form</title>
+</head>
+
+<body>
+    <form>
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="button" value="Upload" onclick="window.uploadFile()">
+    </form>
+    <script src="https://unpkg.com/@github/file-attachment-element@3.1.0/dist/index.umd.js"></script>
+
+
+    <script type="module">
+        import { Octokit } from "https://cdn.skypack.dev/@octokit/rest";
+        window.Octokit = Octokit;
+    </script>
+    <script src="upload.js"></script>
+
+</body>
+
+</html>
