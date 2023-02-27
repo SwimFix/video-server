@@ -1,17 +1,14 @@
-import { Octokit } from "https://cdn.skypack.dev/@octokit/rest";
-
-
 async function uploadFile() {
     const fileInput = document.getElementById('fileToUpload');
     const file = fileInput.files[0];
 
-    const token = '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';
-    const octokit = new Octokit({
+    const token = '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';
+    const octokit = new window.Octokit({
         auth: token,
     });
 
-    const repo = 'geraw/Formal-Methods-Seminar';
-    const path = 'file2.txt';
+    const repo = 'SwimFix/video-server';
+    const path = 'file3.txt';
     const content = await file.text();
 
     // Print ocktokit to see what methods are available
@@ -31,4 +28,6 @@ async function uploadFile() {
     });
 
     alert('File uploaded successfully!');
-}    
+}
+
+window.uploadFile = uploadFile;
