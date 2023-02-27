@@ -11,7 +11,7 @@ async function uploadFile() {
 
     const repo = 'SwimFix/video-server';
 
-    const path = 'file'+generateRandom+'.txt';
+    const path = 'file'+generateRandom()+'.txt';
     const content = await file.text();
 
     // Print ocktokit to see what methods are available
