@@ -1,3 +1,5 @@
+    export default generateRandom = () => Math.random().toString(36).substring(2, 15) + Math.random().toString(23).substring(2, 5);
+
 async function uploadFile() { 
     const fileInput = document.getElementById('fileToUpload');
     const file = fileInput.files[0];
@@ -8,7 +10,8 @@ async function uploadFile() {
     });
 
     const repo = 'SwimFix/video-server';
-    const path = 'file3.txt';
+
+    const path = 'file'+generateRandom+'.txt';
     const content = await file.text();
 
     // Print ocktokit to see what methods are available
