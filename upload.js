@@ -1,4 +1,4 @@
-    export default generateRandom = () => Math.random().toString(36).substring(2, 15) + Math.random().toString(23).substring(2, 5);
+generateRandom = () => Math.random().toString(36).substring(2, 15) + Math.random().toString(23).substring(2, 5);
 
 async function uploadFile() { 
     const fileInput = document.getElementById('fileToUpload');
